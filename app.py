@@ -13,7 +13,7 @@ moviePlayURL  = soup.find('a', class_='btn-element btn btn-fullcolor btn-block b
 
 app = flask.Flask(__name__)
 
-@app.route('/' , methods=['GET'])
+@app.route('/')
 def home():
     return moviePlayURL
 
