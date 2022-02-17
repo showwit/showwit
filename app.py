@@ -2,6 +2,7 @@ from cgitb import html
 import requests
 from bs4 import BeautifulSoup
 import flask
+from flask import Flask
 from flask import request
 
 URL = 'http://mathanosto.top/movie.php?imdbid=' + 'tt10733228' + '&cat=' + 'Bollywood'
@@ -14,6 +15,5 @@ app = flask.Flask(__name__)
 
 @app.route('/' , methods=['GET'])
 def home():
-    arg  = request.args['arg1']
     return moviePlayURL
 
