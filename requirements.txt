@@ -1,5 +1,5 @@
 flask
 gunicorn
 requests
-BeautifulSoup
+beautifulsoup4==4.3.2
 lxml
