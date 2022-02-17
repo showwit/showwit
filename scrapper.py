@@ -8,7 +8,6 @@ URL = 'http://mathanosto.top/movie.php?imdbid=' + 'tt10733228' + '&cat=' + 'Boll
 html_text = requests.get(URL).text
 soup = BeautifulSoup(html_text, 'lxml')
 moviePlayURL  = soup.find('a', class_='btn-element btn btn-fullcolor btn-block btn-fullwidth')['href']
-print(moviePlayURL)
 
 
 app = flask.Flask(__name__)
